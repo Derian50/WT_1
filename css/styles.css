@@ -1,0 +1,65 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+    
+}
+.main{
+
+    background: url(../images/shapka.png) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.block_1{
+    margin-left: 100px;
+    margin-right: 800px;
+    margin-top: 150px;
+    text-align: center;
+}
+.block_1 p{
+    margin: 20px;
+}
+.main nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    
+}
+.main nav div{
+    margin-top: 30px;
+    flex-grow: 1;
+}
+.main nav div a{
+    border-left: 2px solid blue; 
+    padding-left: 10px;
+    color: black;
+    text-decoration: none;
+}
+.main nav div:hover{
+    border-bottom: 4px solid transparent;
+}
+.main nav div:last-child a{
+    padding-left: 2px;
+}
+#logo{
+    text-align: start;
+    flex-grow: 5;
+    margin-left: 30px;
+}
+
+
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v27-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/roboto-v27-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto-v27-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v27-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/roboto-v27-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/roboto-v27-latin_cyrillic-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+  }
