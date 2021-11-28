@@ -1,9 +1,7 @@
-
 *{
     margin: 0;
     padding: 0;
     font-family: "Roboto";
-    
 }
 .main{
 
@@ -11,10 +9,24 @@
     background-size: cover;
     height: 100vh;
 }
+.about{
+
+    background: url(../images/shapka_block_2.png) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.portf{
+    margin-left: 5vw;
+    margin-right: 50vw;
+    text-align: center;
+}
+.portf p{
+    margin: 2vh;
+}
 .block_1{
-    margin-left: 100px;
-    margin-right: 800px;
-    margin-top: 150px;
+    margin-left: 5vw;
+    margin-right: 60vw;
+    margin-top: 15vh;
     text-align: center;
 }
 .block_1 p{
@@ -25,10 +37,9 @@
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    
 }
 .main nav div{
-    margin-top: 30px;
+    margin-top: 1vh;
     flex-grow: 1;
 }
 .main nav div a{
@@ -43,14 +54,139 @@
 .main nav div:last-child a{
     padding-left: 2px;
 }
+.jsrow_1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.jsrow_1 .jsblock{
+ height: 10vh;   
+}
+.jsrow_2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.jsblock{
+    flex-grow: 1;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: blue;
+    flex-grow: 1;
+    margin: 1vw;
+    max-width: 40vw;
+}
+.jsrow_2 .jsblock{
+    height: 60vh; 
+}
+.jsrow_1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.jsrow_2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.row_1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.row_1 div{
+    margin-top: 20vh;
+    margin-bottom: 8vh;
+    flex-grow: 1;
+}
+.row_2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.row_2 div{
+    flex-grow: 1;
+}
+.row_2 div img{
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    max-width: 100%;
+    height: 40vh;
+    width: 30vw;
+}
 #logo{
     text-align: start;
     flex-grow: 5;
     margin-left: 30px;
 }
+#logo a{
+    border-left: 0px;
+}
+#logo:hover{
+    border-bottom: 0px;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-top: 4vh;
+    background-color: gainsboro;
+}
+.resume{
+    
+    
+    
+    /* Сверху | Справа | Снизу | Слева */
+    padding: 5vh 0 0 5vw;
+    color: #000;
+}
+.resume h1{
+    text-align: left;
+}
 
-
-
+main{
+    width: 50vw;
+}
+main div{
+    text-align: center;
+    
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    padding:15px;
+}
+main div p{
+    padding: 5px;
+}
+table {
+    
+    font-size: 14px;
+    border-collapse: collapse;
+    text-align: center;
+    }
+    th, td:first-child {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 20px 40px;
+    }
+    th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: rgb(0, 0, 0);
+    }
+    td {
+    background: #ffffff;
+    }
+    th:first-child, td:first-child {
+    text-align: left;
+    }
 @font-face {
     font-family: 'Roboto';
     font-style: normal;

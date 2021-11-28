@@ -27,28 +27,41 @@
             
             
         </nav>
-        <div class="resume">
-
-            <h1>Резюме</h1>
-    
-            <table class="wrapper" border="1">
-    
+            <main>
             <div>
-                <tr>
-                 <th>Год</th>
-                 <th>Место работы/учебы</th>
-                 <th>Должностные обязанности</th>
-                 
-                </tr>
-                <tr><td>2020-2031</td><td>Университет "Дубна" </td><td>Прикладная информатика</td>
-                <tr><td>2018-20??</td><td>ГосДеп США</td><td>Разведка и шпионаж</td>
-                <tr><td>2023</td><td>ООО "Кефир" </td><td>Разработка мобильных ААА игр</td>
-                
-               </table>
+                Как вам удобно получить ответ:
+    
+        <p><input name="a" id="numberInput" type="radio" value="tlf"> По телефону</p>
+        <textarea hidden="true" id="number" cols="40" rows="1">+7</textarea>
+        <p><input name="a" id="mailInput" type="radio" value="message"> Письмом</p>
+        <textarea hidden="true" id="mail" cols="40" rows="1">@gmail.com</textarea>
+        <p><input name="a" id="nothingInput" type="radio" value="nth" checked> Не нужно отвечать</p>
+    
             </div>
-            
-        
+               
+    
+            <div class = "wrapper">Еще вопрос:
+    
+            <select id = "selectInput">
+                <option>Нет вопроса</option>
+                <option>Есть вопрос</option>
+                <option>Что такое вопрос?</option>
+                <option>Вопросы тщетны</option>
+            </select>
         </div>
+    
+     <div hidden="true" id = "quest" class = "wrapper">
+    Укажите тему вопроса: 
+    
+    <textarea  name="quest" cols="40" id = "textarea" rows="3"></textarea></p>
+      
+    
+    
+                </div>
+               <div><input type="submit" id = "submit" value="Отправить"></div>
+               <div><label id ="result"></label></div>
+            </div>
+        </main>
     </div>
         <footer>
             <div id = "contacts" class = "contacts">
@@ -59,6 +72,6 @@
             </div>
         </footer>
     </div>
-    
+    <script src="../js/main.js"></script>
 </body>
 </html>

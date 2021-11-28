@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="../css/styles.css" type="text/css"/>  
+</head>
+<body>
+    <div class = "main" id = "main">    
+        <nav>
+            
+            <div id = "logo">
+                <a href="../index.html">
+                <img src="../images/logo.jpg" alt="" width="74" height="96">
+                </a>
+            </div>
+            <div><a href="../index.html">О себе</a></div>
+            <div><a href="../pages/resume.html">Резюме</a></div>
+            <div><a href="../pages/portf.html">Портфолио</a></div>
+            <div><a href="../index.html#comp">Компетенции</a></div>
+            <div><a href="../pages/contacts.html">Контакты</a></div>
+            <div><a href="../pages/js.html">JS</a></div>
+           
+            
+            
+            
+        </nav>
+        <div class = "jsrow_1">
+            <div class = "jsblock">
+                <div>
+                    <input type="checkbox" id="contactChoice1"
+                    name="contact" value="email">
+                   <label for="contactChoice1">Email</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="contactChoice2"
+                    name="contact" value="phone">
+                   <label for="contactChoice2">Phone</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="contactChoice3"
+                    name="contact" value="mail">
+                   <label for="contactChoice3">Mail</label>
+                </div>
+            </div>
+            <div class = "jsblock">
+                <div>
+                    <input type="button" id = "changeTheme" value = "Сменить тему">
+                </div>
+                <div>
+                    <input type="button" id = "hiddenBlock" value = "Скрыть кнопку">
+                </div>
+            </div>
+        </div>
+        <div class = "jsrow_2">
+            <div class = "jsblock">
+                <div>
+                    <p>Как вам удобно получить ответ:</p>
+                </div>
+                <div>
+                    <p><input name="a" id="numberInput" type="radio" value="tlf"> По телефону</p>
+                    <textarea hidden="true" id="number" cols="40" rows="1">+7</textarea>
+                </div>
+                <div>
+                    <p><input name="a" id="mailInput" type="radio" value="message"> Письмом</p>
+                    <textarea hidden="true" id="mail" cols="40" rows="1">@gmail.com</textarea>
+                </div>
+                <div>
+                    <p><input name="a" id="nothingInput" type="radio" value="nth" checked> Не нужно отвечать</p>
+                </div>
+                <div>
+                    <p>Ещё вопрос:</p>
+                    <select id = "selectInput">
+                        <option>Нет вопроса</option>
+                        <option>Есть вопрос</option>
+                        <option>Что такое вопрос?</option>
+                        <option>Вопросы тщетны</option>
+                    </select>
+                </div>
+                <div hidden="true" id = "quest">
+                    <p>Укажите тему вопроса: </p>
+                    <textarea  name="quest" cols="40" id = "textarea" rows="3"></textarea>
+                </div>
+                <div>
+                    <input type="submit" id = "submit" value="Отправить">
+                </div>
+                <div>
+                    <label id ="result"></label>
+                </div>
+            </div>
+            <div class = "jsblock">
+                <div>
+                    <div>
+                        <div>
+                        <img src="../images/portf_1.jpg" width="400" height="300" alt="">
+                    </div>
+                    <div>  
+                        <img src="../images/portf_1.jpg" width="100" height="100" class="img_cool" alt="" onclick="f(1)">
+                        <img src="../images/portf_2.jpg" width="100" height="100" class="img_cool" onclick="f(2)">
+                        <img src="../images/portf_3.jpg" width="100" height="100" class="img_cool" alt="" onclick="f(3)">
+                    </div>
+                    <div>
+                        <button onclick="f1()">старт</button>
+                        <button onclick="stop()">стоп</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+
+
+
+
+        
+    <script src="../js/jspage.js"></script>
+    </div>
+        <footer>
+            <div id = "contacts" class = "contacts">
+                <a href="https://youtu.be/dQw4w9WgXcQ"><img src="../images/social_1.png" alt="" height="32"></a>
+                <a href="https://youtu.be/dQw4w9WgXcQ"><img src="../images/social_2.png" alt="" height="32"></a>
+                <a href="https://youtu.be/dQw4w9WgXcQ"><img src="../images/social_3.png" alt="" height="32"></a>
+                <p>Сайт разработан Непонятно Кем, Copyright (c) 2021</p>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+
+</html>
