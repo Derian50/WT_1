@@ -54,6 +54,7 @@
             </div>
         </div>
         <div class = "jsrow_2">
+
             <div class = "jsblock">
                 <div>
                     <p>Как вам удобно получить ответ:</p>
@@ -93,12 +94,12 @@
                 <div>
                     <div>
                         <div>
-                        <img src="../images/portf_1.jpg" width="400" height="300" alt="">
+                        <img src="../images/portf_1.jpg" width="200" height="150" alt="">
                     </div>
                     <div>  
-                        <img src="../images/portf_1.jpg" width="100" height="100" class="img_cool" alt="" onclick="f(1)">
-                        <img src="../images/portf_2.jpg" width="100" height="100" class="img_cool" onclick="f(2)">
-                        <img src="../images/portf_3.jpg" width="100" height="100" class="img_cool" alt="" onclick="f(3)">
+                        <img src="../images/portf_1.jpg" width="64" height="64" class="img_cool" alt="" onclick="f(1)">
+                        <img src="../images/portf_2.jpg" width="64" height="64" class="img_cool" onclick="f(2)">
+                        <img src="../images/portf_3.jpg" width="64" height="64" class="img_cool" alt="" onclick="f(3)">
                     </div>
                     <div>
                         <button onclick="f1()">старт</button>
@@ -107,8 +108,38 @@
                     </div>
                 </div>
             </div>
+        
+            
         </div>
-       
+        <div class = "jsrow_3">
+            <div class = "jsblock">
+            <div>
+                <input type="checkbox" id="contactChoiceCookie1"
+                name="contact" value="localStorage" checked = true>
+               <label for="contactChoiceCookie1">localStorage</label>
+            </div>
+            <div>
+                <input type="checkbox" id="contactChoiceCookie2"
+                name="contact" value="Смена темы" checked = true>
+               <label for="contactChoiceCookie2">Смена темы</label>
+            </div>
+            <div>
+                <input type="checkbox" id="contactChoiceCookie3"
+                name="contact" value="Обратная связь" checked = true>
+               <label for="contactChoiceCookie3">Обратная связь</label>
+            </div>
+            <div>
+                <input type="checkbox" id="contactChoiceCookie4"
+                name="contact" value="Фотогалерея" checked = true>
+               <label for="contactChoiceCookie4">Фотогалерея</label>
+            </div>
+            </div>
+            <div class = "jsblock">
+                <textarea name="Кол-во стоблцов" id="colCount" cols="6" rows="1"></textarea>
+                <input id = "btnCanvas" type="submit" value="отправить">
+                <canvas id="canvas" width="500px" height="150px" style = "border:2px solid"></canvas>
+            </div>
+        </div>
 
 
 

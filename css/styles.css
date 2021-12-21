@@ -61,7 +61,7 @@
     text-align: center;
 }
 .jsrow_1 .jsblock{
- height: 10vh;   
+ height: 8vh;   
 }
 .jsrow_2{
     display: flex;
@@ -79,7 +79,7 @@
     max-width: 40vw;
 }
 .jsrow_2 .jsblock{
-    height: 60vh; 
+    height: 30vh; 
 }
 .jsrow_1{
     display: flex;
@@ -92,6 +92,15 @@
     justify-content: space-around;
     align-items: center;
     text-align: center;
+}
+.jsrow_3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.jsrow_3 .jsblock{
+    height: 30vh; 
 }
 .row_1{
     display: flex;

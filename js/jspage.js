@@ -126,3 +126,115 @@ function stop()
 {
     clearTimeout(id);   
 }
+
+//
+
+function getCookie(name) {
+    let matches = document.cookie.match(new RegExp(
+      "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+    ));
+    return matches ? decodeURIComponent(matches[1]) : undefined;
+}
+
+function setCookie(name, value, options = {}) {
+
+    options = {
+      path: '/',
+      ...options
+    };
+  
+    if (options.expires instanceof Date) {
+      options.expires = options.expires.toUTCString();
+    }
+  
+    let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+  
+    for (let optionKey in options) {
+      updatedCookie += "; " + optionKey;
+      let optionValue = options[optionKey];
+      if (optionValue !== true) {
+        updatedCookie += "=" + optionValue;
+      }
+    }
+  
+    document.cookie = updatedCookie;
+}
+contactChoiceCookie1 = document.getElementById("contactChoiceCookie1")
+contactChoiceCookie2 = document.getElementById("contactChoiceCookie2")
+contactChoiceCookie3 = document.getElementById("contactChoiceCookie3")
+contactChoiceCookie4 = document.getElementById("contactChoiceCookie4")
+
+if(getCookie("ccc1") == "false"){
+    contactChoiceCookie1.checked = false
+    document.getElementsByClassName("jsblock")[0].hidden = true;
+}
+if(getCookie("ccc2") == "false"){
+    contactChoiceCookie2.checked = false
+    document.getElementsByClassName("jsblock")[1].hidden = true;
+} 
+if(getCookie("ccc3") == "false"){
+    contactChoiceCookie3.checked = false
+    document.getElementsByClassName("jsblock")[2].hidden = true;
+} 
+if(getCookie("ccc4") == "false"){
+    contactChoiceCookie4.checked = false
+    document.getElementsByClassName("jsblock")[3].hidden = true;
+} 
+contactChoiceCookie1.addEventListener('change', function(){
+    setCookie("ccc1", contactChoiceCookie1.checked, {})
+    if(contactChoiceCookie1.checked == false){
+        document.getElementsByClassName("jsblock")[0].hidden = true;
+    }else{
+        document.getElementsByClassName("jsblock")[0].hidden = false;
+    }
+})
+contactChoiceCookie2.addEventListener('change', function(){
+    setCookie("ccc2", contactChoiceCookie2.checked, {})
+    if(contactChoiceCookie2.checked == false){
+        document.getElementsByClassName("jsblock")[1].hidden = true;
+    }else{
+        document.getElementsByClassName("jsblock")[1].hidden = false;
+    }
+})
+contactChoiceCookie3.addEventListener('change', function(){
+    setCookie("ccc3", contactChoiceCookie3.checked, {})
+    if(contactChoiceCookie3.checked == false){  
+        document.getElementsByClassName("jsblock")[2].hidden = true;
+    }else{
+        document.getElementsByClassName("jsblock")[2].hidden = false;
+    }
+})
+contactChoiceCookie4.addEventListener('change', function(){
+    setCookie("ccc4", contactChoiceCookie4.checked, {})
+    if(contactChoiceCookie4.checked == false){
+        document.getElementsByClassName("jsblock")[3].hidden = true;
+    }else{
+        document.getElementsByClassName("jsblock")[3].hidden = false;
+    }
+})
+
+//
+
+cvs = document.getElementById("canvas")
+ctx = cvs.getContext("2d")
+
+var colCount = 0
+btnCanvas = document.getElementById("btnCanvas")
+btnCanvas.addEventListener('click', function(){
+    colCount = document.getElementById("colCount").value
+    drawDiagram(colCount)
+})
+
+function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
+  }
+
+
+var drawDiagram = function(col){
+    ctx.clearRect(0,0,500,150)
+    ctx.fillStyle = "#9F2B68"
+    for(var i = 0; i < col; i++){
+        randY = getRandomArbitrary(10,140)
+        ctx.fillRect(4*i + (500/col * i), randY, 500/col, 150-randY)
+    }
+}
